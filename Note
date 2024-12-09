@@ -1,0 +1,6 @@
+
+use && instead of ; if u want to stop the process on error when u are doing command list 
+
+There are some situations in which you might want to continue running other commands as you wait for another one to complete, to run more than one job in parallel. You can arrange for a command to run in the background by ending it with a single ampersand (&) control operator.
+
+use (type -P) to print path of given name
