@@ -1,6 +1,12 @@
 
 use && instead of ; if u want to stop the process on error when u are doing command list 
 
-There are some situations in which you might want to continue running other commands as you wait for another one to complete, to run more than one job in parallel. You can arrange for a command to run in the background by ending it with a single ampersand (&) control operator.
+There are some situations in which you might want to continue running other commands as you wait for another one to complete, to run more than one job in parallel. You can arrange for a command to run in the background by ending it with a single ampersand (&) control operator
 
 use (type -P) to print path of given name
+
+use (rm -r) less and delete as little as possible and as specifically as possible
+
+use (grep -q) for input stream matches without printing matching line eg. grep -q telenet /etc/services && echo 'matched' , for count , multiple select , invert the match eg. grep -cFv -e bash -e '.' /etc/shells
+
+when you are writing a new script, consider declaring an appropriate umask near the top eg. umask 027 = give all permission to owner , only read to group and none to others
